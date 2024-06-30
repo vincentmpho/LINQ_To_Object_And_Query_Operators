@@ -13,6 +13,7 @@ namespace LINQ_To_Object_And_Query_Operators
             UniversityManager um = new UniversityManager();
 
             um.MaleStudents();
+            um.SortStudentsByAge();
 
             Console.ReadLine();
         }
