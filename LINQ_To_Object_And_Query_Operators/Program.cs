@@ -14,6 +14,7 @@ namespace LINQ_To_Object_And_Query_Operators
 
             um.MaleStudents();
             um.SortStudentsByAge();
+            um.AllStudentFromUj();
 
             Console.ReadLine();
         }

@@ -57,5 +57,21 @@ namespace LINQ_To_Object_And_Query_Operators
                 student.ShowInfo();
             }
         }
+
+        public void AllStudentFromUj()
+        {
+            IEnumerable<Student> bjtStudents = from student in students
+                                               join University in universities on student.UniversityId 
+                                               equals University.Id
+                                               where University.Name =="UJ"
+                                               select student;
+
+            Console.WriteLine("Student from UJ");
+
+            foreach(Student s in bjtStudents)
+            {
+                s.ShowInfo();
+            }
+        }
     }
 }
